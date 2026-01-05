@@ -1,0 +1,67 @@
+h2 {
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background: #f5f5f5;
+  text-align: left;
+}
+
+.pagination {
+  margin: 1rem 0;
+  display: flex;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #ff6384;
+  color: #fff;
+  border-color: #ff6384;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chart-wrapper {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;  // 🔑 Explicit height required
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.chart-wrapper h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 300px !important;  // 🔑 Override Chart.js sizing
+  border-radius: 4px;
+}
